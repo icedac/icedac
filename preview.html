@@ -1,0 +1,137 @@
+<!doctype html>
+<!-- design: Kenya Hara — black and white, generous negative space, a single geometric focal point. -->
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="description" content="icedac / zhugehyuk. Systems, agents and experiments. Seoul, Earth.">
+  <title>icedac — a continuous work in progress</title>
+  <style>
+    :root { color-scheme: dark; --bg:#080808; --ink:#f5f5f5; --sub:#a3a3a3; --rule:#303030; }
+    :root[data-theme="light"] { color-scheme:light; --bg:#fafafa; --ink:#111111; --sub:#666666; --rule:#d4d4d4; }
+    * { box-sizing:border-box; }
+    html { background:var(--bg); }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:'Avenir Next','Trebuchet MS',sans-serif; -webkit-font-smoothing:antialiased; }
+    a { color:inherit; text-decoration:none; text-underline-offset:5px; }
+    a:focus-visible, button:focus-visible { outline:2px solid var(--ink); outline-offset:6px; }
+    button { color:inherit; font:inherit; }
+    .wrap { max-width:1408px; margin:0 auto; padding:0 64px; }
+    .mono { font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace; font-size:11px; letter-spacing:.09em; line-height:1.8; text-transform:uppercase; }
+    header { padding-top:40px; display:flex; justify-content:space-between; align-items:center; gap:24px; }
+    .location { color:var(--sub); }
+    .controls { display:flex; align-items:center; gap:24px; }
+    button { padding:8px 0; background:transparent; border:0; cursor:pointer; }
+    button[aria-pressed="true"] { text-decoration:underline; text-underline-offset:5px; }
+    .theme { display:flex; gap:9px; align-items:center; }
+    .theme-mark { border:1px solid currentColor; width:12px; height:12px; border-radius:50%; background:linear-gradient(90deg,currentColor 50%,transparent 50%); }
+    .hero { min-height:600px; display:grid; grid-template-columns:1fr 1fr; align-items:center; position:relative; padding:48px 0 56px; }
+    h1 { font-size:clamp(100px,12.6vw,182px); font-weight:500; letter-spacing:-.075em; line-height:1; margin:0 0 32px -.06em; }
+    .period { font-size:.45em; margin-left:.13em; }
+    .intro { font-size:clamp(22px,2.25vw,30px); line-height:1.5; letter-spacing:-.025em; margin:0; max-width:410px; }
+    .identity { margin:32px 0 0; color:var(--sub); }
+    .art { width:100%; max-width:620px; aspect-ratio:1; justify-self:end; position:relative; }
+    .art svg { width:100%; height:100%; overflow:visible; display:block; }
+    .art figcaption { position:absolute; bottom:5px; left:0; right:0; text-align:center; color:var(--sub); font-size:10px; letter-spacing:.14em; }
+    figure { margin:0; }
+    .paused .phase-a, .paused .phase-b, .hidden .phase-a, .hidden .phase-b { animation-play-state:paused; }
+    .section-line { border-top:1px solid var(--rule); padding:24px 0 32px; display:flex; justify-content:space-between; gap:24px; color:var(--sub); }
+    .work { padding-bottom:80px; display:grid; grid-template-columns:1fr 2fr; gap:80px; }
+    .work-note { max-width:270px; font-size:17px; line-height:1.75; margin:8px 0 0; color:var(--sub); }
+    .work-note a { color:var(--ink); text-decoration:underline; text-decoration-color:var(--rule); }
+    .project { border-bottom:1px solid var(--rule); padding:20px 0; display:grid; grid-template-columns:40px 1fr 24px; gap:12px; align-items:baseline; }
+    .project:first-child { padding-top:4px; }
+    .index { color:var(--sub); }
+    .project h2 { font-size:23px; font-weight:500; letter-spacing:-.03em; margin:0 0 8px; }
+    .project p { font-size:15px; line-height:1.6; color:var(--sub); margin:0; }
+    .arrow { font-size:20px; justify-self:end; }
+    footer { border-top:1px solid var(--rule); padding:24px 0 40px; display:flex; align-items:center; justify-content:space-between; color:var(--sub); gap:24px; }
+    footer nav { display:flex; flex-wrap:wrap; gap:24px; }
+    .skip { position:absolute; top:-80px; left:16px; background:var(--bg); padding:12px; z-index:10; }
+    .skip:focus { top:8px; }
+    @media(hover:hover) and (pointer:fine) { a:hover h2, footer a:hover, button:hover { text-decoration:underline; text-underline-offset:5px; } }
+    @media(max-width:760px) {
+      .wrap { padding:0 24px; } header { padding-top:24px; align-items:flex-start; }
+      .controls { gap:16px; } .location { max-width:130px; font-size:10px; }
+      .hero { min-height:0; grid-template-columns:1fr; padding:64px 0 32px; gap:16px; }
+      h1 { font-size:clamp(98px,23vw,160px); margin-bottom:24px; }
+      .intro { font-size:24px; } .identity { margin-top:24px; }
+      .art { max-width:440px; justify-self:center; margin-top:8px; } .art figcaption { bottom:-4px; }
+      .section-line { padding:24px 0; } .section-line span:last-child { display:none; }
+      .work { grid-template-columns:1fr; gap:32px; padding-bottom:48px; } .work-note { max-width:340px; margin-top:0; }
+      .project { grid-template-columns:24px 1fr 20px; } footer { align-items:flex-start; flex-direction:column; padding-bottom:32px; }
+    }
+    @media(prefers-reduced-motion:reduce) { *, *::before, *::after { scroll-behavior:auto!important; } .phase-a,.phase-b { animation:none!important; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#work">Skip to selected work</a>
+  <div class="wrap">
+    <header>
+      <a class="mono location" href="https://github.com/icedac">ZHUGEHYUK / SEOUL, EARTH</a>
+      <div class="controls">
+        <button class="mono" id="motion" aria-pressed="false" aria-label="Pause animation">Pause</button>
+        <button class="mono theme" id="theme" aria-pressed="false" aria-label="Use light theme"><span class="theme-mark" aria-hidden="true"></span><span id="theme-label">Light</span></button>
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="name">
+        <div>
+          <h1 id="name">icedac<span class="period">.</span></h1>
+          <p class="intro">Systems, agents<br>&amp; experiments.</p>
+          <p class="mono identity">A continuous work in progress</p>
+        </div>
+        <figure class="art">
+          <svg viewBox="-240 -240 480 480" role="img" aria-label="Slowly shifting monochrome interference sculpture"><style>
+  .phase-a { animation: phase-a 32s cubic-bezier(.45,0,.55,1) infinite alternate; }
+  .phase-b { animation: phase-b 43s cubic-bezier(.45,0,.55,1) infinite alternate; }
+  @keyframes phase-a { from { transform: rotate(-9deg) scale(.97); } to { transform: rotate(9deg) scale(1.03); } }
+  @keyframes phase-b { from { transform: rotate(7deg) scale(1.025); } to { transform: rotate(-7deg) scale(.975); } }
+  @media (prefers-reduced-motion: reduce) { .phase-a, .phase-b { animation: none !important; } }
+</style><defs><g id="preview-field"><g transform="scale(1 .88)"><ellipse rx="188.000" ry="84.000" transform="rotate(0.0000)"/><ellipse rx="190.054" ry="83.942" transform="rotate(2.8125)"/><ellipse rx="192.064" ry="83.769" transform="rotate(5.6250)"/><ellipse rx="193.986" ry="83.483" transform="rotate(8.4375)"/><ellipse rx="195.778" ry="83.087" transform="rotate(11.2500)"/><ellipse rx="197.402" ry="82.583" transform="rotate(14.0625)"/><ellipse rx="198.822" ry="81.978" transform="rotate(16.8750)"/><ellipse rx="200.008" ry="81.276" transform="rotate(19.6875)"/><ellipse rx="200.934" ry="80.485" transform="rotate(22.5000)"/><ellipse rx="201.580" ry="79.613" transform="rotate(25.3125)"/><ellipse rx="201.933" ry="78.667" transform="rotate(28.1250)"/><ellipse rx="201.983" ry="77.657" transform="rotate(30.9375)"/><ellipse rx="201.731" ry="76.592" transform="rotate(33.7500)"/><ellipse rx="201.182" ry="75.483" transform="rotate(36.5625)"/><ellipse rx="200.347" ry="74.341" transform="rotate(39.3750)"/><ellipse rx="199.245" ry="73.176" transform="rotate(42.1875)"/><ellipse rx="197.899" ry="72.000" transform="rotate(45.0000)"/><ellipse rx="196.340" ry="70.824" transform="rotate(47.8125)"/><ellipse rx="194.600" ry="69.659" transform="rotate(50.6250)"/><ellipse rx="192.716" ry="68.517" transform="rotate(53.4375)"/><ellipse rx="190.731" ry="67.408" transform="rotate(56.2500)"/><ellipse rx="188.687" ry="66.343" transform="rotate(59.0625)"/><ellipse rx="186.628" ry="65.333" transform="rotate(61.8750)"/><ellipse rx="184.598" ry="64.387" transform="rotate(64.6875)"/><ellipse rx="182.642" ry="63.515" transform="rotate(67.5000)"/><ellipse rx="180.803" ry="62.724" transform="rotate(70.3125)"/><ellipse rx="179.118" ry="62.022" transform="rotate(73.1250)"/><ellipse rx="177.627" ry="61.417" transform="rotate(75.9375)"/><ellipse rx="176.359" ry="60.913" transform="rotate(78.7500)"/><ellipse rx="175.344" ry="60.517" transform="rotate(81.5625)"/><ellipse rx="174.603" ry="60.231" transform="rotate(84.3750)"/><ellipse rx="174.152" ry="60.058" transform="rotate(87.1875)"/><ellipse rx="174.000" ry="60.000" transform="rotate(90.0000)"/><ellipse rx="174.152" ry="60.058" transform="rotate(92.8125)"/><ellipse rx="174.603" ry="60.231" transform="rotate(95.6250)"/><ellipse rx="175.344" ry="60.517" transform="rotate(98.4375)"/><ellipse rx="176.359" ry="60.913" transform="rotate(101.2500)"/><ellipse rx="177.627" ry="61.417" transform="rotate(104.0625)"/><ellipse rx="179.118" ry="62.022" transform="rotate(106.8750)"/><ellipse rx="180.803" ry="62.724" transform="rotate(109.6875)"/><ellipse rx="182.642" ry="63.515" transform="rotate(112.5000)"/><ellipse rx="184.598" ry="64.387" transform="rotate(115.3125)"/><ellipse rx="186.628" ry="65.333" transform="rotate(118.1250)"/><ellipse rx="188.687" ry="66.343" transform="rotate(120.9375)"/><ellipse rx="190.731" ry="67.408" transform="rotate(123.7500)"/><ellipse rx="192.716" ry="68.517" transform="rotate(126.5625)"/><ellipse rx="194.600" ry="69.659" transform="rotate(129.3750)"/><ellipse rx="196.340" ry="70.824" transform="rotate(132.1875)"/><ellipse rx="197.899" ry="72.000" transform="rotate(135.0000)"/><ellipse rx="199.245" ry="73.176" transform="rotate(137.8125)"/><ellipse rx="200.347" ry="74.341" transform="rotate(140.6250)"/><ellipse rx="201.182" ry="75.483" transform="rotate(143.4375)"/><ellipse rx="201.731" ry="76.592" transform="rotate(146.2500)"/><ellipse rx="201.983" ry="77.657" transform="rotate(149.0625)"/><ellipse rx="201.933" ry="78.667" transform="rotate(151.8750)"/><ellipse rx="201.580" ry="79.613" transform="rotate(154.6875)"/><ellipse rx="200.934" ry="80.485" transform="rotate(157.5000)"/><ellipse rx="200.008" ry="81.276" transform="rotate(160.3125)"/><ellipse rx="198.822" ry="81.978" transform="rotate(163.1250)"/><ellipse rx="197.402" ry="82.583" transform="rotate(165.9375)"/><ellipse rx="195.778" ry="83.087" transform="rotate(168.7500)"/><ellipse rx="193.986" ry="83.483" transform="rotate(171.5625)"/><ellipse rx="192.064" ry="83.769" transform="rotate(174.3750)"/><ellipse rx="190.054" ry="83.942" transform="rotate(177.1875)"/></g></g></defs>
+    <g fill="none" stroke="currentColor" stroke-width=".6" stroke-linejoin="round">
+      <g class="phase-a" opacity=".62"><use href="#preview-field"/></g>
+      <g class="phase-b" opacity=".24"><use href="#preview-field"/></g>
+    </g></svg>
+          <figcaption class="mono">Continuous study — 01 / Interference</figcaption>
+        </figure>
+      </section>
+      <div class="section-line mono"><span id="work">Selected work</span><span>From low-level systems to open-ended questions</span></div>
+      <section class="work" aria-labelledby="work">
+        <p class="work-note">Building at <a href="https://2lab.ai">2lab.ai</a>.<br>Working with AI. Thinking in systems. Making room for experiments.</p>
+        <div>
+          <a class="project" href="https://github.com/2lab-ai/llmux"><span class="index mono">01</span><div><h2>llmux</h2><p>A local proxy for Claude, GPT and Grok.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="project" href="https://github.com/icedac/np_alloc"><span class="index mono">02</span><div><h2>np_alloc</h2><p>Lock-free memory allocation. C++ down to the details.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+          <a class="project" href="https://github.com/icedac/experiments"><span class="index mono">03</span><div><h2>experiments</h2><p>WebGL prototypes, particles and computational art.</p></div><span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+    </main>
+    <footer class="mono"><span>Still curious.</span><nav aria-label="Elsewhere"><a href="https://github.com/icedac">GitHub ↗</a><a href="https://2lab.ai">2lab.ai ↗</a><a href="https://github.com/labforadvancedstudy/paper">Research ↗</a><a href="https://www.threads.com/@zhugehyuk">Threads ↗</a></nav></footer>
+  </div>
+  <script>
+    const root = document.documentElement;
+    const themeButton = document.getElementById('theme');
+    const motionButton = document.getElementById('motion');
+    const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
+    let paused = false;
+    themeButton.addEventListener('click', () => {
+      const light = root.dataset.theme !== 'light';
+      root.dataset.theme = light ? 'light' : 'dark';
+      themeButton.setAttribute('aria-pressed', String(light));
+      themeButton.setAttribute('aria-label', light ? 'Use dark theme' : 'Use light theme');
+      document.getElementById('theme-label').textContent = light ? 'Dark' : 'Light';
+    });
+    function updateMotion() {
+      root.classList.toggle('paused', paused || motionPreference.matches);
+      motionButton.disabled = motionPreference.matches;
+      motionButton.textContent = motionPreference.matches ? 'Still' : paused ? 'Play' : 'Pause';
+      motionButton.setAttribute('aria-label', motionPreference.matches ? 'Reduced motion enabled in system settings' : paused ? 'Play animation' : 'Pause animation');
+      motionButton.setAttribute('aria-pressed', String(paused || motionPreference.matches));
+    }
+    motionButton.addEventListener('click', () => { paused = !paused; updateMotion(); });
+    motionPreference.addEventListener('change', updateMotion);
+    document.addEventListener('visibilitychange', () => root.classList.toggle('hidden', document.hidden));
+    updateMotion();
+  </script>
+</body>
+</html>
