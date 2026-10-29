@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile-still.svg?v=2">
-  <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile-still.svg?v=2">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark-still.svg?v=2">
-  <img src="./assets/profile-light-still.svg?v=2" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/icedac/icedac/02aa6fabfedec97393768fd90800dd0a48a4f476/assets/profile-dark-mobile-still.svg">
+  <source media="(max-width: 640px)" srcset="https://raw.githubusercontent.com/icedac/icedac/02aa6fabfedec97393768fd90800dd0a48a4f476/assets/profile-light-mobile-still.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/icedac/icedac/02aa6fabfedec97393768fd90800dd0a48a4f476/assets/profile-dark-still.svg">
+  <img src="https://raw.githubusercontent.com/icedac/icedac/02aa6fabfedec97393768fd90800dd0a48a4f476/assets/profile-light-still.svg" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
 </picture>
 
 Building at [2lab.ai](https://2lab.ai). Working with AI, thinking in systems, making room for experiments.

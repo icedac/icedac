@@ -34,6 +34,8 @@ python3 tools/build.py
 
 Python's standard library is enough. Edit copy in `README.md`, `STILL.md` and `tools/preview.template.html`; artwork text and geometry live in `tools/build.py`. The generator writes all SVG variants and the single-file `preview.html`.
 
+README and STILL image URLs pin the artwork to a Git commit so GitHub's raw-image cache cannot keep showing a previous design. After changing artwork, commit the SVGs first, then update the eight raw image URLs to that commit SHA.
+
 Open `preview.html` in a browser, or serve this directory locally. The preview has a light/dark switch and pause/play control. It is a companion presentation; GitHub determines the surrounding README font and link styling.
 
 ## Motion and accessibility
@@ -56,4 +58,4 @@ Open `preview.html` in a browser, or serve this directory locally. The preview h
 
 ## Verification
 
-All eight SVGs pass XML parsing, grayscale and self-contained resource checks. The README image paths resolve locally. The companion preview was checked at 1280px and 390px with no horizontal overflow, including light/dark switching and pause/play. GitHub's actual branch README loads the desktop SVG and selects the 720px portrait SVG on a 390px screen. Source descriptions were checked against the three selected public repositories.
+All eight SVGs pass XML parsing, grayscale and self-contained resource checks. The README image URLs reference the artwork at a pinned Git commit. The companion preview was checked at 1280px and 390px with no horizontal overflow, including light/dark switching and pause/play. GitHub's actual branch README loads the desktop SVG and selects the 720px portrait SVG on a 390px screen. Source descriptions were checked against the three selected public repositories.
