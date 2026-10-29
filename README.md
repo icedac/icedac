@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile.svg">
-  <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
-  <img src="./assets/profile-light.svg" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile.svg?v=2">
+  <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile.svg?v=2">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg?v=2">
+  <img src="./assets/profile-light.svg?v=2" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
 </picture>
 
 <p align="right"><sub><a href="./STILL.md">Still version</a></sub></p>
