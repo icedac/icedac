@@ -10,8 +10,8 @@ Acceptance → Readable on desktop and mobile, light and dark themes, useful wit
 | --- | --- | --- |
 | [GitHub profile](https://github.com/icedac) | Display name zhugehyuk; Seoul; link to 2lab.ai and Threads | Name, location and links |
 | [llmux](https://github.com/2lab-ai/llmux) and [28 October commit](https://github.com/2lab-ai/llmux/commit/1734ab000341e274c94b537e5886a3e0ad9d0ea7) | Public local AI proxy; recent commit by icedac | Current work, first project |
-| [np_alloc](https://github.com/icedac/np_alloc) | C++ per-thread lock-free allocator; repository pushed 3 April 2026 | Systems project |
-| [experiments](https://github.com/icedac/experiments) | WebGL prototypes and visual art; repository pushed 28 March 2026 | Computational art project |
+| [soma-work](https://github.com/2lab-ai/soma-work) | Slack AI coding assistant; current README and 29 October 2026 commit checked | Second project, selected by the profile owner |
+| [ultima6](https://github.com/2lab-ai/ultima6) | Ultima VI for Amiga, reverse-engineered and ported to Rust; 29 October 2026 commit checked | Third project, selected by the profile owner |
 | [2lab.ai](https://2lab.ai) | Public tools and experimental AI research | Home link and context |
 | [Pinned paper repository](https://github.com/labforadvancedstudy/paper) | Pinned on the public profile | Research link |
 
@@ -56,4 +56,4 @@ Open `preview.html` in a browser, or serve this directory locally. The preview h
 
 ## Verification
 
-See the pull request for the final check results. Verify GitHub's rendered branch README before merging because GitHub sanitizes Markdown independently of the standalone preview.
+All eight SVGs pass XML parsing, grayscale and self-contained resource checks. The README image paths resolve locally. The companion preview was checked at 1280px and 390px with no horizontal overflow, including light/dark switching and pause/play. GitHub's actual branch README loads the desktop SVG and selects the 720px portrait SVG on a 390px screen. Source descriptions were checked against the three selected public repositories.

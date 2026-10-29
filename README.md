@@ -14,8 +14,8 @@ Building at [2lab.ai](https://2lab.ai). Working with AI, thinking in systems, ma
 <sub>SELECTED WORK</sub>
 
 **[llmux](https://github.com/2lab-ai/llmux)** · A local proxy for Claude, GPT and Grok.  
-**[np_alloc](https://github.com/icedac/np_alloc)** · Lock-free memory allocation in C++.  
-**[experiments](https://github.com/icedac/experiments)** · WebGL, particles and computational art.
+**[soma-work](https://github.com/2lab-ai/soma-work)** · AI coding workflows, from a Slack conversation.  
+**[ultima6](https://github.com/2lab-ai/ultima6)** · A Rust port of Ultima VI for the Amiga.
 
 <br>
 
