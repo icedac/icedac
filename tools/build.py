@@ -46,7 +46,7 @@ def hero(theme, mobile=False, static=False):
     if mobile:
         typography = f'''
         <text x="48" y="69" class="meta" fill="{muted}">ZHUGEHYUK / SEOUL, EARTH</text>
-        <text x="43" y="213" class="name" font-size="132" letter-spacing="-9">icedac<tspan font-size="58" dx="10">.</tspan></text>
+        <text x="43" y="213" class="name" font-size="112" letter-spacing="-6.5">zhugehyuk<tspan font-size="50" dx="10">.</tspan></text>
         <text x="48" y="266" class="body">Systems, agents &amp; experiments.</text>
         <g transform="translate(360 533) scale(1.14)">{sculpture(fg, static=static)}</g>
         <path d="M48 801H672" stroke="{rule}"/>
@@ -56,7 +56,7 @@ def hero(theme, mobile=False, static=False):
         typography = f'''
         <text x="64" y="76" class="meta" fill="{muted}">ZHUGEHYUK / SEOUL, EARTH</text>
         <text x="1216" y="76" text-anchor="end" class="meta" fill="{muted}">CONTINUOUS STUDY — 01</text>
-        <text x="55" y="324" class="name" font-size="148" letter-spacing="-10">icedac<tspan font-size="64" dx="12">.</tspan></text>
+        <text x="55" y="324" class="name" font-size="112" letter-spacing="-6.5">zhugehyuk<tspan font-size="50" dx="12">.</tspan></text>
         <text x="64" y="387" class="body">Systems, agents</text>
         <text x="64" y="425" class="body">&amp; experiments.</text>
         <g transform="translate(938 316) scale(1.1)">{sculpture(fg, static=static)}</g>
@@ -65,7 +65,7 @@ def hero(theme, mobile=False, static=False):
         <text x="1216" y="593" text-anchor="end" class="meta" fill="{muted}">2LAB.AI ↗</text>
         '''
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">
-    <title id="title">icedac — zhugehyuk</title>
+    <title id="title">zhugehyuk</title>
     <desc id="desc">Systems, agents and experiments. Seoul, Earth. A continuous work in progress. Fine monochrome ellipses slowly drift into an interference sculpture.</desc>
     <style>{'' if static else STYLE}
     text {{ fill: {fg}; }}
