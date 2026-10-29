@@ -1,60 +1,24 @@
-<!--
-**icedac/icedac** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile.svg">
+  <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
+  <img src="./assets/profile-light.svg" width="100%" alt="icedac / zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
+</picture>
 
-Here are some ideas to get you started:
+<p align="right"><sub><a href="./STILL.md">Still version</a></sub></p>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Building at [2lab.ai](https://2lab.ai). Working with AI, thinking in systems, making room for experiments.
 
-## Hey 👋, I'm GShock Im  
-  
+<br>
 
-<a href="https://linkedin.com/in/icedac" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>  
-<a href="https://x.com/zhugehyuk" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-</a>
-<a href="https://github.com/icedac" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://dev.to/icedac" target="_blank">
-<img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 5px;" />
-</a>
-  
+<sub>SELECTED WORK</sub>
 
+**[llmux](https://github.com/2lab-ai/llmux)** · A local proxy for Claude, GPT and Grok.  
+**[soma-work](https://github.com/2lab-ai/soma-work)** · AI coding workflows, from a Slack conversation.  
+**[ultima6](https://github.com/2lab-ai/ultima6)** · A Rust port of Ultima VI for the Amiga.
 
+<br>
 
+[2lab.ai](https://2lab.ai) &nbsp; / &nbsp; [Research](https://github.com/labforadvancedstudy/paper) &nbsp; / &nbsp; [Threads](https://www.threads.com/@zhugehyuk)
 
-
-## Github Stats  
-<table><tr><td valign="top" width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api?username=icedac&show_icons=true&count_private=true&hide_border=true" align="left" style="width: 100%" />
-
-</td><td valign="top" width="50%">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=icedac&hide_border=true&layout=compact" align="left" style="width: 100%" />
-
-</td></tr></table>  
-
-<br/>  
-
-  
-
-<br/>  
-
-![Profile views counter](https://komarev.com/ghpvc/?username=icedac&&style=flat-square)  
-  
-
-<br/>  
-
-
-<br />
+<sub>Still curious.</sub>
