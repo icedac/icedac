@@ -2,7 +2,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile.svg">
   <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark.svg">
-  <img src="./assets/profile-light.svg" width="100%" alt="icedac / zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
+  <img src="./assets/profile-light.svg" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
 </picture>
 
 <p align="right"><sub><a href="./STILL.md">Still version</a></sub></p>

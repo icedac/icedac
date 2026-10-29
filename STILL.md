@@ -2,7 +2,7 @@
   <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/profile-dark-mobile-still.svg">
   <source media="(max-width: 640px)" srcset="./assets/profile-light-mobile-still.svg">
   <source media="(prefers-color-scheme: dark)" srcset="./assets/profile-dark-still.svg">
-  <img src="./assets/profile-light-still.svg" width="100%" alt="icedac / zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
+  <img src="./assets/profile-light-still.svg" width="100%" alt="zhugehyuk — Systems, agents and experiments. Seoul, Earth. A continuous work in progress.">
 </picture>
 
 Building at [2lab.ai](https://2lab.ai). Working with AI, thinking in systems, making room for experiments.

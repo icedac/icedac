@@ -1,6 +1,6 @@
 # Profile design and maintenance
 
-Intent → Give icedac a quiet, recognizable profile grounded in current public work.
+Intent → Give zhugehyuk (GitHub account: icedac) a quiet, recognizable profile grounded in current public work.
 Behavior → A monochrome interference study, a short introduction and three project links.
 Acceptance → Readable on desktop and mobile, light and dark themes, useful without animation.
 
